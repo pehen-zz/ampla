@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ampla - Sistema de Gestão de Ambientes</title>
+    <link rel="stylesheet" href="css/mui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="mui-appbar mui-z1">
+        <div class="mui-container">
+            <table width="100%">
+                <tr style="vertical-align:middle;">
+                    <td class="mui-appbar-height">
+                        <span class="mui-text-headline mui-text-white">Avaliação Operacional</span>
+                    </td>
+                    <!-- <td class="mui-appbar-height" align="right">Right Side</td> -->
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="mui-container">
+        <div class="mui-row">
+            <div class="mui-col-md-4">
+                <div class="mui-panel mui-text-menu sidebar">
+                    <section class="profile">
+                        <a href="javascript:;" class="mui-text-body2">
+                            <img src="media/profilepic.jpg" alt="" class="mui-z1"> Pedro Gasparini
+                            <span class="mui-caret mui-right"></span></a>
+                    </section>
+
+<ul class="mui-tabs">
+  <li class="mui-active"><a data-mui-toggle="tab" data-mui-controls="pane-default-1">Tab-1</a></li>
+  <li><a data-mui-toggle="tab" data-mui-controls="pane-default-2">Tab-2</a></li>
+  <li><a data-mui-toggle="tab" data-mui-controls="pane-default-3">Tab-3</a></li>
+</ul>
+<div class="mui-tab-content">
+  <div class="mui-tab-pane mui-active" id="pane-default-1">Pane-1</div>
+  <div class="mui-tab-pane" id="pane-default-2">Pane-2</div>
+  <div class="mui-tab-pane" id="pane-default-3">Pane-3</div>
+</div>
+                    
+                    <div class="mui-divider"></div>
+                    <section class="menu">
+                    	<a href="javascript:;">
+                    		Dashboard
+                    	</a>
+                    	<div class="mui-divider"></div>
+                    	<a href="javascript:;" class="selected">
+                    		Atividades
+                    	</a>
+                    	<div class="mui-divider"></div>
+                    	<a href="javascript:;">
+                    		Gráficos
+                    	</a>
+                    	<div class="mui-divider"></div>
+                    	<a href="javascript:;">
+                    		Rotinas
+                    	</a>
+                    	<div class="mui-divider"></div>
+                    	<a href="javascript:;">
+                    		Chamadas
+                    	</a>
+                    	<div class="mui-divider"></div>
+                    	<a href="javascript:;">
+                    		Avaliações
+                    	</a>
+                    </section>
+                </div>
+            </div>
+            <div class="mui-col-md-8">
+                <div class="breadcrumbs mui-text-caption mui-text-black">
+                    <a href="javascript:;" class="mui-divider-right">Atividades &nbsp;</a> Cadastro
+                </div>
+                <div class="mui-panel">
+                    <form>
+                        <legend>Title
+                            <button type="submit" class="mui-btn mui-btn-primary mui-pull-right">salvar</button>
+                            <button type="submit" class="mui-btn mui-btn-flat mui-pull-right">cancelar</button>
+                        </legend>
+                        <div class="mui-form-group">
+                            <input type="text" class="mui-form-control" required>
+                            <label class="mui-form-floating-label">
+                                Código de classificação
+                            </label>
+                        </div>
+                        <div class="mui-form-group">
+                            <input type="text" class="mui-form-control" required>
+                            <label class="mui-form-floating-label">Descrição</label>
+                        </div>
+                        <div class="mui-form-group">
+                            <input type="text" class="mui-form-control" required>
+                            <label class="mui-form-floating-label">Código da atividade</label>
+                        </div>
+                        <div class="mui-form-group">
+                            <input type="text" class="mui-form-control">
+                            <label class="mui-form-floating-label">Descrição</label>
+                        </div>
+                        <div class="mui-form-group">
+                            <input type="text" class="mui-form-control">
+                            <label class="mui-form-floating-label">Observações</label>
+                        </div>
+                        <div class="mui-form-group">
+                            <input type="text" class="mui-form-control" required>
+                            <label class="mui-form-floating-label">Título</label>
+                        </div>
+                        <div class="mui-checkbox">
+                            <label>
+                                <input type="checkbox" value=""> Usuário avalia
+                            </label>
+                        </div>
+                        <div class="mui-form-group">
+                            <input type="text" class="mui-form-control">
+                            <label class="mui-form-floating-label">Título para o usuário</label>
+                        </div>
+                        <div class="mui-select mui-text-caption">
+                            <select>
+                                <option value="">Local</option>
+                                <option>Local 1</option>
+                                <option>Local 2</option>
+                                <option>Local 3</option>
+                                <option>Local 4</option>
+                            </select>
+                        </div>
+                        <div class="mui-form-group">
+                            <input type="text" class="mui-form-control">
+                            <label class="mui-form-floating-label">Ambiente</label>
+                        </div>
+                        <!-- <div class="mui-form-group">
+                            <textarea class="mui-form-control" placeholder="Textarea"></textarea>
+                        </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/mui.min.js"></script>
+    <script src="js/mui-react.min.js"></script>
+    <script type="text/jsx">
+        React.render(
+        <MUIFormGroup type="text" label="Email address" isLabelFloating={true} />, document.getElementById('target') );
+    </script>
+</body>
+
+</html>
